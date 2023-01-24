@@ -15,11 +15,11 @@
         </h1>
 
         <form action="data.php" method="POST">
-            <label for="paragraph"> Inserisci il paragrafo: </label>
+            <label for="paragraph"> Inserisci La parola da omettere: </label>
             <input type="text" name="paragraph" id="paragraph">
             <br>
             <label for="censored">Paragrafo da censurare: </label>
-            <input type="text" name="censored" id="censored">
+            <textarea id="censored" name="censored" rows="4" cols="50"></textarea>
             <button type="submit">INVIA</button>
         </form>
     </main>
