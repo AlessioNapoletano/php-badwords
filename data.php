@@ -14,20 +14,47 @@
             Stampa dati:
         </h1>
 
-        <p>
-            paragrafo:
-            <?php
-            $paragraph = $_POST['paragraph'];
-            echo $paragraph;
-            ?>
-        </p>
+        <div class="paragraph">
+            <h3>
+                Paragrafo 1
+            </h3>
+            <p>
+                paragrafo:
+                <?php
+                $paragraph = $_POST['paragraph'];
+                echo $paragraph;
+                ?>
+            </p>
 
-        <p>
-            Lunghezza paragrafo:
-            <?php
-            echo strlen($paragraph);
-            ?>
-        </p>
+            <p>
+                Lunghezza paragrafo:
+                <?php
+                echo strlen($paragraph);
+                ?>
+            </p>
+        </div>
+
+        <div class="censored">
+        <h3>
+                Paragrafo 2
+            </h3>
+            <p>
+                paragrafo:
+                <?php
+                $censored = $_POST['censored'];
+                echo $paragraph;
+                ?>
+            </p>
+
+            <p>
+                Lunghezza paragrafo:
+                <?php
+                echo strlen($censored);
+                ?>
+            </p>
+        </div>
+
+        <a href="index.php">Torno alla pagina del Form</a>
     </main>
 </body>
 
