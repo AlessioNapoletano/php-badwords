@@ -41,12 +41,6 @@
             <p>
                 paragrafo:
                 <?php
-                /*
-                    $subjectVal  = "You eat fruits, vegetables, fiber every day."
-                    $searchVal = array("fruits", "vegetables", "fiber")
-                    $replaceVal = array("pizza", "beer", "ice cream")
-                    str_replace($array1, $array2, $str)
-                */
                 $censored = $_POST['censored'];
                 $new_censored = str_replace($paragraph, '***', $censored);
                 echo $new_censored;
